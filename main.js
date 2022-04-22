@@ -46,6 +46,14 @@ const app = new Vue({
                 this.list.unshift(todo)
             }
             this.newTask = ''
+        },
+
+        doneChange(index){
+            if(this.list[index].done){
+                this.list[index].done = false
+            } else {
+                this.list[index].done = true
+            }
         }
     }
     

@@ -22,7 +22,7 @@
             <div class="list">
                 <ul>
                     <li v-for="(todo,index) in list" :class="isDone(index)">
-                        {{list[index].text}} <span v-html="xmark" @click="removeTodo"></span>
+                        <span v-on:click="doneChange(index)" class="task_text">{{list[index].text}}</span> <span v-html="xmark" @click="removeTodo" class="task_icon"></span>
                     </li>
                 </ul>
             </div>
