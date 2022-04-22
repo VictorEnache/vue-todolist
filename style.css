@@ -13,21 +13,44 @@ h1{
     font-size: 4rem;
 }
 
+.add,.list{
+    display: flex;
+    justify-content: center;
+}
+
+.add{
+    column-gap: 1rem;
+}
+
+.add input,.add button{
+    border: none;
+    border:1px solid lightcoral;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.add button{
+    background-color: antiquewhite;
+}
+
+
 ul{
     list-style: none;
     width: 250px;
+    background-color: antiquewhite;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
 }
 
 li{
     display: flex;
     justify-content: space-between;
-    
+    border-bottom: 1px solid lightcoral;
+    margin-bottom: 1rem;
 }
 
-.add,.list{
-    display: flex;
-    justify-content: center;
-}
+
 
 .done{
     text-decoration: line-through;
