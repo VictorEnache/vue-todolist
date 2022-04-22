@@ -32,7 +32,12 @@ const app = new Vue({
             if(this.list[index].done){
                 return 'done'
             }
+        },
+
+        removeTodo(index){
+            this.list.splice(index, 1)
         }
     }
+    
 
 })
