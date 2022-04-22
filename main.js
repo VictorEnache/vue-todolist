@@ -24,6 +24,8 @@ const app = new Vue({
         ],
 
         xmark: '<i class="fa-solid fa-circle-xmark"></i>',
+
+        newTask:''
         
     },
 
@@ -36,6 +38,14 @@ const app = new Vue({
 
         removeTodo(index){
             this.list.splice(index, 1)
+        },
+
+        addTask(){
+            const todo = {text: this.newTask, done:false}
+            if(this.newTask !== ''){
+                this.list.unshift(todo)
+            }
+            this.newTask = ''
         }
     }
     

@@ -15,12 +15,13 @@ h1{
 
 ul{
     list-style: none;
+    width: 250px;
 }
 
 li{
     display: flex;
     justify-content: space-between;
-    column-gap: 5rem;
+    
 }
 
 .add,.list{
